@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Cache-Control" content="no-store" />
+        <link href="index.css" rel="stylesheet">
+    </head>
+    <body> 
+
+        <div class="center-div">
+        Welcome.
+        </div>
+        <form name="url_form">
+            <input name="url" placeholder="Search the web (eg. 'nowgg roblox')">
+        </form>
+        <div class="center-div">or<br>&nbsp;<br>
+        
+            <span class="button" onclick="playGame('aHR0cHM6Ly9ub3dnZy5ieXBhc3MvbW5i');">GAMES</span>
+            </div>
+        <script src="uv/uv.bundle.js"></script>
+        <script src="uv/uv.config.js"></script>
+        <script src="index.js"></script>
+        <script>
+        window.navigator.serviceWorker.register('./sw.js', {
+        scope: __uv$config.prefix
+        });
+        </script>
+    </body>
+</html>
